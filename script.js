@@ -1,14 +1,8 @@
-// JavaScript to toggle the Dynamic Island into a search bar
-function toggleSearchBar() {
-    const dynamicIsland = document.querySelector('.dynamic-island');
-    const searchInput = document.querySelector('.search-input');
-    
-    dynamicIsland.classList.toggle('expanded');
-    
-    // Focus on the search input when expanded
-    if (dynamicIsland.classList.contains('expanded')) {
-        searchInput.focus();
-    } else {
-        searchInput.value = ""; // Clear search input when collapsing
-    }
-}
+// JavaScript for future functionality
+document.querySelector('.dynamic-island').addEventListener('mouseover', () => {
+    console.log('Dynamic Island hovered');
+});
+
+document.querySelector('.dynamic-island').addEventListener('mouseout', () => {
+    console.log('Dynamic Island unhovered');
+});
