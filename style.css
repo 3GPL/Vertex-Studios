@@ -1,0 +1,41 @@
+/* Basic page styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the "Dynamic Island" */
+.dynamic-island {
+    position: fixed;
+    top: 20px;
+    width: 200px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Hover effect for the "Dynamic Island" */
+.dynamic-island:hover {
+    width: 220px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* Centering the image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px; /* To avoid overlap with the dynamic island */
+}
