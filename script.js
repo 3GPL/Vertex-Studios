@@ -3,7 +3,6 @@ function toggleSearchBar() {
     const dynamicIsland = document.querySelector('.dynamic-island');
     const searchInput = document.querySelector('.search-input');
     
-    // Toggle the expanded class
     dynamicIsland.classList.toggle('expanded');
     
     // Focus on the search input when expanded
