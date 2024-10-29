@@ -17,54 +17,25 @@ body {
     height: 30px;
     background-color: black;
     border-radius: 20px;
+    transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    overflow: hidden;
 }
 
-/* Text within the Dynamic Island */
-.dynamic-text {
-    transition: opacity 0.3s ease;
-}
-
-/* Hidden search input */
-.search-input {
-    width: 100%;
-    height: 100%;
-    padding: 0 10px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    color: black;
-    opacity: 0;
-    background-color: white;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    text-align: left;
-    display: none;
-}
-
-/* Expanded Dynamic Island as a search bar */
-.dynamic-island.expanded {
-    width: 300px;
+/* Hover effect for the "Dynamic Island" */
+.dynamic-island:hover {
+    width: 220px;
     height: 35px;
-    justify-content: flex-start;
-    padding: 0 10px;
-    background-color: white;
+    cursor: pointer;
 }
 
-.dynamic-island.expanded .dynamic-text {
-    opacity: 0;
-    display: none;
-}
-
-.dynamic-island.expanded .search-input {
-    display: block;
-    opacity: 1;
+/* Centering the image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px; /* To avoid overlap with the dynamic island */
 }
